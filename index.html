@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        .boxes{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <span><input id="product-name" type="text" placeholder="Prodect"></span>
+        <span><input id="product-quantity" type="text" placeholder="Quantity"></span>
+    </div>
+    <div class="boxes">
+        <button onclick="addProduct()" style="width: 344px; margin-top: 7px;">Add Product</button>
+    </div>
+    <div style="width: 344px; margin-left: auto; margin-right: auto;">
+        <ul id="product-container">
+
+        </ul>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
